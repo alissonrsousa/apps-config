@@ -28,7 +28,7 @@ spring:
         data: classpath:/sql/data.sql
         driver-class-name: com.mysql.jdbc.Driver
         platform: mysql
-        url: jdbc:mysql://192.168.99.100/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
+        url: jdbc:mysql://192.168.99.100/seguranca?verifyServerCertificate=false&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
         username: admin
         password: 'admin'
     jpa:
