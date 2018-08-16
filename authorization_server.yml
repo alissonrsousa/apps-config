@@ -1,0 +1,28 @@
+﻿server:
+  port: 9092
+
+eureka:
+  instance:
+    hostname: localhost
+    port: 9091
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
+
+datasource:
+    hikari:
+        connection-test-query: SELECT 1 FROM DUAL
+        minimum-idle: 1
+        maximum-pool-size: 5
+    driver-class-name: com.mysql.jdbc.Driver
+    jdbc-url: jdbc:mysql://192.168.99.100/oauth2?verifyServerCertificate=false&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
+    username: admin
+    password: admin
+    initialization-mode: always
+jpa:
+  hibernate:
+    ddl-auto: none
