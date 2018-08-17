@@ -31,11 +31,5 @@ authserver:
   hostname: http://localhost:9092
 security:
   oauth2:
-    client:
-      client-id: curl_client
-      client-secret: user
-      access-token-uri: ${authserver.hostname}/oauth/token
-      user-authorization-uri: ${authserver.hostname}/oauth/authorize  
     resource:
-      user-info-uri: ${authserver.hostname}/user
-      
+      userInfoUri: ${authserver.hostname}/user
