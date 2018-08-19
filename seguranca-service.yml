@@ -32,5 +32,13 @@ authserver:
   hostname: http://localhost:9092
 security:
   oauth2:
+    client:
+    accessTokenUri: ${authserver.hostname}/oauth/token
+    userAuthorizationUri: ${authserver.hostname}/oauth/authorize
+    clientId: curl_client
+    clientSecret: user
+    scope: read,write
+    auto-approve-scopes: '.*'
+  
     resource:
       userInfoUri: ${authserver.hostname}/user
