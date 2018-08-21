@@ -31,9 +31,6 @@ spring:
 authserver:
   hostname: http://localhost:9092
 security:
-  basic:
-    enabled: false
-
   oauth2:
     client:
     accessTokenUri: ${authserver.hostname}/oauth/token
