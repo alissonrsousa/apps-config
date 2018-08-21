@@ -29,8 +29,3 @@ spring:
 
 authserver:
   hostname: http://localhost:9092
-security:
-  oauth2:
-    client:
-        clientId: curl_client
-        clientSecret: user
