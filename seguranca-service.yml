@@ -20,6 +20,7 @@ spring:
         url: jdbc:mysql://192.168.99.100/seguranca?verifyServerCertificate=false&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
         username: admin
         password: 'admin'
+        jdbcUrl: jdbc:mysql://192.168.99.100/seguranca?verifyServerCertificate=false&useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
         generate-ddl: false
@@ -29,3 +30,14 @@ spring:
 
 authserver:
   hostname: http://localhost:9092
+security:
+  oauth2:
+    client:
+        resourceId: product_api
+        clientId: curl_client
+        clientSecret: user
+        scope: read,write
+        auto-approve-scopes: '.*'
+  
+    resource:
+      userInfoUri: ${authserver.hostname}/user
