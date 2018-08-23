@@ -32,4 +32,5 @@ zuul:
   routes:
     seguranca:
       path: /seguranca/**
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
       url: http://localhost:9093/seguranca   
