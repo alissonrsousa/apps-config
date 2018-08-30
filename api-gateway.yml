@@ -34,3 +34,7 @@ zuul:
       path: /seguranca/**
       sensitiveHeaders:
       url: http://localhost:9093/seguranca   
+    produto:
+      path: /produto/**
+      sensitiveHeaders:
+      url: http://localhost:9093/produto         
