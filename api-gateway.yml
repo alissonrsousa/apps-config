@@ -37,4 +37,4 @@ zuul:
     produto:
       path: /produto/**
       sensitiveHeaders:
-      url: http://localhost:9093/produto         
+      url: http://localhost:9094/produto         
