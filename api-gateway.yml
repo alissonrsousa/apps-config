@@ -37,4 +37,8 @@ zuul:
     produto:
       path: /produto/**
       sensitiveHeaders:
-      url: http://localhost:9094/produto         
+      url: http://localhost:9094/produto 
+    oauth2:
+      path: /oauth/**
+      sensitiveHeaders:
+      url: http://localhost:9092/oauth      
