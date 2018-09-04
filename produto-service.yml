@@ -1,5 +1,6 @@
 ﻿server:
   port: 0
+  contextPath: /produto-service
 
 eureka:
   instance:
