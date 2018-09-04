@@ -28,7 +28,8 @@ security:
     resource:
       userInfoUri: ${authserver.hostname}/user
       
-#zuul:
+zuul:
+  sensitiveHeaders: 
 #  prefix: /api
 #  routes:
 #    seguranca:
