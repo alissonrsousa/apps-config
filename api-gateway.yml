@@ -28,18 +28,18 @@ security:
     resource:
       userInfoUri: ${authserver.hostname}/user
       
-zuul:
-  prefix: /api
-  routes:
-    seguranca:
-      path: /seguranca/**
-      sensitiveHeaders:
-      url: http://localhost:9093/seguranca   
-    produto:
-      path: /produto/**
-      sensitiveHeaders:
-      url: http://localhost:9094/produto 
-    oauth:
-      path: /oauth/**
-      sensitiveHeaders:
-      url: http://localhost:9092/oauth      
+#zuul:
+#  prefix: /api
+#  routes:
+#    seguranca:
+#      path: /seguranca/**
+#      sensitiveHeaders:
+#      url: http://localhost:9093/seguranca   
+#    produto:
+#      path: /produto/**
+#      sensitiveHeaders:
+#      url: http://localhost:9094/produto 
+#    oauth:
+#      path: /oauth/**
+#      sensitiveHeaders:
+#      url: http://localhost:9092/oauth      
