@@ -2,15 +2,13 @@
     security:
         oauth2:
             hostname: http://localhost:9092
-            client:
-                clientId: curl_client
-                clientSecret: user
+            clientId: curl_client
+            clientSecret: user
  
 fornecedor: 
     security:
         oauth2:
             hostname: http://localhost:9092
-            client:
-                clientId: curl_client
-                clientSecret: user       
+            clientId: curl_client
+            clientSecret: user       
   
