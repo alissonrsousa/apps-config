@@ -1,9 +1,7 @@
-﻿server:
-  port: 9999
-
-lojaVirtual:
+﻿lojaVirtual:
     security:
         oauth2:
+            hostname: http://localhost:9092
             client:
                 clientId: curl_client
                 clientSecret: user
@@ -11,6 +9,7 @@ lojaVirtual:
 fornecedor: 
     security:
         oauth2:
+            hostname: http://localhost:9092
             client:
                 clientId: curl_client
                 clientSecret: user       
