@@ -1,0 +1,17 @@
+﻿server:
+  port: 9999
+
+lojaVirtual:
+    security:
+        oauth2:
+            client:
+                clientId: curl_client
+                clientSecret: user
+ 
+fornecedor: 
+    security:
+        oauth2:
+            client:
+                clientId: curl_client
+                clientSecret: user       
+  
