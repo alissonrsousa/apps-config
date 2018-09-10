@@ -6,11 +6,13 @@ lojaVirtual:
         oauth2:
             url: http://localhost:9092/oauth/token?grant_type=client_credentials&client_id=curl_client&client_secret=user
             authorizationHeader: Basic Y3VybF9jbGllbnQ6dXNlcg==
+    api-gateway:
+        url: http://localhost:8080
  
-fornecedor: 
-    security:
-        oauth2:
-            hostname: http://localhost:9092
-            clientId: curl_client
-            clientSecret: user       
+#fornecedor: 
+#    security:
+#        oauth2:
+#            hostname: http://localhost:9092
+#            clientId: curl_client
+#            clientSecret: user       
   
