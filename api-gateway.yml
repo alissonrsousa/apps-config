@@ -28,6 +28,15 @@ security:
     resource:
       userInfoUri: ${authserver.hostname}/user
       
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 60000      
+      
 zuul:
   sensitiveHeaders: 
 #  prefix: /api
