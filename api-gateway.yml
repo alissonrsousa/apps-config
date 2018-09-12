@@ -28,10 +28,10 @@ security:
     resource:
       userInfoUri: ${authserver.hostname}/user
       
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 120000
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 180000
 ribbon:
-  ConnectTimeout: 30000
-  ReadTimeout: 60000   
+  ConnectTimeout: 60000
+  ReadTimeout: 120000   
       
 zuul:
   sensitiveHeaders: 
