@@ -42,3 +42,4 @@ security:
   
     resource:
       userInfoUri: ${authserver.hostname}/user
+      
